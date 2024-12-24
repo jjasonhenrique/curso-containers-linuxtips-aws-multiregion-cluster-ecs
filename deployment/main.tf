@@ -1,6 +1,6 @@
 module "ecs" {
-  source = "/home/jason/Utils/Github/curso-containers-linuxtips-aws-modules/ecs"
-  #source = "github.com/jjasonhenrique/curso-containers-linuxtips-aws-modules.git//ecs?ref=v2.0.0"
+  #source = "/home/jason/Utils/Github/curso-containers-linuxtips-aws-modules/ecs"
+  source = "github.com/jjasonhenrique/curso-containers-linuxtips-aws-modules.git//ecs?ref=v2.1.0"
 
   project_name = var.project_name
 
