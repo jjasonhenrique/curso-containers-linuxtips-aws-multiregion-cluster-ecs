@@ -14,3 +14,7 @@ variable "ssm_public_subnets" {
   type = list(string)
 }
 
+variable "acm_dns_certs" {
+  type = list(string)
+}
+

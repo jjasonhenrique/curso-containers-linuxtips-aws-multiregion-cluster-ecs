@@ -15,3 +15,7 @@ ssm_private_subnets = [
   "/linuxtips-multiregion/vpc/private/us-east-1b",
   "/linuxtips-multiregion/vpc/private/us-east-1c"
 ]
+
+acm_dns_certs = [
+  "*.jjasonhenrique.com"
+]
