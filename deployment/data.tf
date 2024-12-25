@@ -13,6 +13,6 @@ data "aws_ssm_parameter" "private_subnets" {
 }
 
 data "aws_acm_certificate" "main" {
-  count = length(var.acm_dns_certs)
+  count  = length(var.acm_dns_certs)
   domain = var.acm_dns_certs[count.index]
 }

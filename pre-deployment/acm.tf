@@ -1,5 +1,5 @@
 resource "aws_acm_certificate" "main" {
-  domain_name = var.acm_dns_name
+  domain_name       = var.acm_dns_name
   validation_method = "DNS"
 
   lifecycle {
@@ -36,7 +36,7 @@ resource "aws_acm_certificate" "secondary" {
 
   provider = aws.secondary
 
-  domain_name = var.acm_dns_name
+  domain_name       = var.acm_dns_name
   validation_method = "DNS"
 
   lifecycle {
@@ -45,7 +45,7 @@ resource "aws_acm_certificate" "secondary" {
 }
 
 resource "aws_route53_record" "secondary" {
-  
+
   provider = aws.secondary
 
   for_each = {

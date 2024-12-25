@@ -3,6 +3,6 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias = "secondary"
+  alias  = "secondary"
   region = var.region_secondary
 }
